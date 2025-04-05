@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Form">
+    <meta name="author" content="Mark Joshua Escoto">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="image-wrapper">
+            <img src="images/z-boat.png" alt="Rafting Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- contact us section -->
+        <section class="main-contact">
+            <div class="contact-us">
+                <h2 class="first-heading">CONTACT US</h2>
+                <h3 class="second-heading">Get in touch today</h3>
+                <p class="description">We love questions and feedback - and we're always to help! Here are some ways
+                    to contact us.</p>
+                <!-- email & contact container -->
+                <div>
+                    <div class="social-wrapper">
+                        <!-- image -->
+                        <div class="contact-image-wrapper">
+                            <img src="/images/gmail.png" alt="gmail-image">
+                        </div>
+                        <div>
+                            <p class="social-first-text">Email: </p>
+                            <p class="social-second-text">contact@company.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-wrapper">
+                        <!-- image -->
+                        <div class="contact-image-wrapper">
+                            <img src="/images/phone.png" alt="gmail-image">
+                        </div>
+                        <div>
+                            <p class="social-first-text">Phone:</p>
+                            <p class="social-second-text">(123) 324-8382-32</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- form -->
+            <div class="contact-form">
+                <form action="">
+                    <!-- fullname -->
+                    <label class="input-text" for="name">Full Name</label>
+                    <input class="input-form" id="name" type="text" placeholder="Enter Full Name">
+                    <!-- Email -->
+                    <label class="input-text" for="email">Email</label>
+                    <input class="input-form" id="email" type="text" placeholder="Enter Email">
+                    <!-- leave us a message  -->
+                    <p class="input-text">Purpose of the Message</p>
+                    <input class="" type="radio" id="general-inquiry" name="purpose-message" value="General Inquiry"
+                        class="input-radio">
+                    <label for="general-inquiry">General Inquiry</label> <br>
+                    <input type="radio" id="reservation-question" name="purpose-message" value="Reservation Question"
+                        class="input-radio">
+                    <label for="reservation-question">Reservation Question</label> <br>
+                    <input type="radio" id="website-suggestion" name="purpose-message" value="Website Suggestion"
+                        class="input-radio">
+                    <label class="website-suggestion-label" for="website-suggestion">Website Suggestion</label> <br>
+
+                    <label class="leave-us-label" for="message">Leave us a message</label>
+                    <textarea id="message" placeholder="Write your message here..."></textarea>
+
+                    <button class="contact-form-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <hr class="dashed">
+
+        <!--Maps  -->
+        <section class="map-section">
+            <div class="map-first-container">
+                <h2>MAPS</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3960.3138750452385!2d125.08022709576306!3d6.972247453644196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1743868092240!5m2!1sen!2sph"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="employee-second-container">
+                <div class="first-wrapper">
+                    <div class="employee-wrapper">
+                        <h3>Admin</h3>
+                        <img class="employee-image" src="/images/person1.jpg" alt="">
+                    </div>
+                    <div class="employee-wrapper">
+                        <h3>Project Manager</h3>
+                        <img class="employee-image" src="/images/person4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="second-wrapper">
+                    <div class="employee-wrapper single-image">
+                        <h3>Manager</h3>
+                        <img class="employee-image" src="/images/person3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting. Mark Joshua Escoto</p>
+        <nav class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.webp" alt="X">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
