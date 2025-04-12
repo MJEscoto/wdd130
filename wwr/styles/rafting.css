@@ -159,11 +159,14 @@ section p {
 }
 
 footer {
+    background-color: var(--primary-color);
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--primary-color);
     height: 50px;
     padding: 1rem;
     color: white;
@@ -171,13 +174,13 @@ footer {
     gap: 20px;
 }
 
-footer p {
+.footer-container p {
     text-align: center;
     width: 80%;
     padding-left: 16rem;
 }
 
-footer .social-links {
+.footer-container .social-links {
     display: flex;
     justify-content: flex-end;
     gap: 1.2rem;
@@ -185,18 +188,38 @@ footer .social-links {
     padding-right: 1.9rem;
 }
 
-footer .social-links a img {
+.footer-container .social-links a img {
     width: 18px;
 }
 
-footer a {
+.footer-container a {
     text-decoration: none;
     transition: ease-in-out 0.2s;
 }
 
-footer a:hover {
+.footer-container a:hover {
     transform: scale(1.2);
     opacity: 1;
+}
+
+.wireframe-container {
+    width: 100%;
+}
+
+.wireframe-container p {
+    color: white;
+    text-align: center;
+}
+
+.wireframe-container a {
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+}
+
+.wireframe-container a:hover {
+    color: rgb(162, 162, 162);
+    text-decoration: underline;
 }
 
 /* Contact Form */
@@ -214,6 +237,7 @@ footer a:hover {
 
 .contact-form {
     width: 50%;
+    margin: 1rem;
 }
 
 .first-heading {
@@ -375,4 +399,263 @@ hr.dashed {
 .first-wrapper {
     display: flex;
     justify-content: space-around;
+}
+
+.hero-home-wrapper {
+    background-image: url("../images/hero.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+/* .home-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; */
+
+
+.home-title h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 11rem
+}
+
+.home-contact {
+    width: 50%;
+
+}
+
+.home-contact h3 {
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 1rem;
+
+
+}
+
+.home-contact .input-text {
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.home-contact .input-form {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 0.8rem;
+    border-radius: 0.4rem;
+    border: 1px solid gray
+}
+
+.home-contact input::placeholder {
+    padding-left: 0.7rem;
+}
+
+.home-contact-form {
+    background-color: #1f4e799c;
+    width: fit-content;
+    min-width: 320px;
+    padding: 2rem 0.7rem;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    -webkit-box-shadow: 8px 8px 20px -18px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 20px -18px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 20px -18px rgba(66, 68, 90, 1);
+
+}
+
+.home-contact-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: var(--highlight-color);
+    color: #ffffff;
+    margin-top: 1.1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.home-button:hover {
+    background-color: #e3571b;
+    cursor: pointer;
+}
+
+.home-second-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.second-image-wrapper {
+    width: 33%;
+}
+
+.second-image-wrapper img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.trips-button {
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: var(--highlight-color);
+    color: #ffffff;
+    margin-top: 1.1rem;
+    transition: all ease-in-out 0.3s;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem
+}
+
+.trips-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.trips-button:hover {
+    background-color: #e3571b;
+    cursor: pointer;
+}
+
+.trips-button-container {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrow {
+    width: 3rem;
+}
+
+.trips-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.trips-main-image {
+    width: 50%;
+    height: 440px;
+}
+
+.trips-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.trips-description-wrapper {
+    width: 50%;
+}
+
+.trips-description-wrapper h1 {
+    color: #1a3d5d;
+}
+
+.trips-header {
+    padding-top: 1rem;
+}
+
+.trips-description-wrapper p {
+    padding: 0.8rem 2.2rem 0;
+    text-align: justify;
+}
+
+.trips-second-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trips-wrapper {
+    width: 33%;
+    background-color: rgba(164, 156, 189, 0.177);
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+    -webkit-box-shadow: 2px 6px 13px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 6px 13px -5px rgba(66, 68, 90, 1);
+    box-shadow: 2px 6px 13px -5px rgba(66, 68, 90, 1);
+}
+
+.trips-second-image {
+    width: 100%;
+    height: 440px;
+}
+
+.trips-second-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.trip-table-container {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.trip-table-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem;
+
+}
+
+.trip-table-data {
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.table-header {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: .9rem;
+}
+
+.trips-button-wrapper {
+    margin-top: 0.8rem;
+}
+
+.trips-button-contact {
+    padding: 0.6rem 0.9rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+
+.trips-button-contact:hover {
+    background-color: #14395b;
+}
+
+.custom-hr {
+    border: none;
+    height: 2px;
+    background-color: #33333360;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.trips-button-contact a {
+    text-decoration: none;
+    color: white;
 }
